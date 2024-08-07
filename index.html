@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- open sance google fonts -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=
+    Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300&display=swap"> -->
+    <!-- main font awesome css file -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- file to make element normal -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- main bootstrap css file -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- main css project file -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>JavaScript Template</title>
+</head>
+<body>
+    <!-- start setting box -->
+    <section class="setting-box rounded-end-4">
+      <div class="setting-box-icon rounded-end-2">
+        <i class="fa-solid fa-gear setting-icon"></i>
+      </div>
+      <div class="box box1 py-3 px-2 ">
+        <h4 class="text-center">Colors</h4>
+        <ul class="list-unstyled mt-3 d-flex justify-content-between ">
+          <li class="active" data-color="#dc143c" data-opacity="#dc143c38" data-aboutsrc="images/about-1.png" data-skillssrc="images/skills-1.png"></li>
+          <li data-color="#20b2aa" data-opacity="#20b2ab50" data-aboutsrc="images/about-2.png" data-skillssrc="images/skills-2.png"></li>
+          <li data-color="#571cce" data-opacity="#571cce34" data-aboutsrc="images/about-3.png" data-skillssrc="images/skills-3.png"></li>
+          <li data-color="#013c3c" data-opacity="#013c3c3f" data-aboutsrc="images/about-4.png" data-skillssrc="images/skills-4.png"></li>
+          <li data-color="#ab420a" data-opacity="#ab420a3b" data-aboutsrc="images/about-5.png" data-skillssrc="images/skills-5.png"></li>
+        </ul>
+      </div>
+      <div class="box box2 text-center py-3">
+        <h4 class="">Random background</h4>
+        <div class="random">
+          <span class="yes active" data-background="yes">Yes</span>
+          <span class="no" data-background="no">No</span>
+        </div>
+      </div>
+      <div class="box box3 text-center py-3">
+        <h4 class="">Show Bullets</h4>
+        <div class="bullets-options">
+          <span class="yes active" data-display="show">Yes</span>
+          <span class="no" data-display="hide">No</span>
+        </div>
+      </div>
+    </section>
+    <!-- end setting box -->
+
+    <!-- start nav-bullets section -->
+    <section class="nav-bullets">
+      <div class="bullet" data-section=".about ">
+        <div class="tip">About Us</div>
+      </div>
+      <div class="bullet" data-section=".skills">
+        <div class="tip">Skills</div>
+      </div>
+      <div class="bullet" data-section=".gallary">
+        <div class="tip">Our Gallary</div>
+      </div>
+      <div class="bullet" data-section=".timeLine">
+        <div class="tip">Timeline</div>
+      </div>
+      <div class="bullet" data-section=".video">
+        <div class="tip">Submit</div>
+      </div>
+      <div class="bullet" data-section=".feature">
+        <div class="tip">Feature</div>
+      </div>
+      <div class="bullet" data-section=".testimonail">
+        <div class="tip">Testimonial</div>
+      </div>
+      <div class="bullet" data-section=".contact">
+        <div class="tip">Contact Us</div>
+      </div>
+    </section>
+    <!-- end bullets section -->
+    
+    <!-- start up button -->
+      <a href="#landing" class="text-white up-button d-flex justify-content-center align-items-center">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    <!-- end up button -->
+
+    <!-- start nav section -->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#">M.Abdelkareem</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-navbar-id" aria-controls="main-navbar-id" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars navbar-bars"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="main-navbar-id">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#" data-section=".about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-section=".skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-section=".gallary">Gallary</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-section=".timeLine">Timeline</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#" data-section=".video">Submit</a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-section=".feature">Feature</a>
+              </li>
+            </ul>
+            <!-- <div class="search ps-3 me-5">
+                <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            </div> -->
+            <a href="#submit" class="btn main-btn rounded-start-pill px-3">Submit</a>
+            <a href="#contact" class="btn second-btn rounded-end-pill px-3">Contact Us</a>
+          </div>
+        </div>
+      </nav>
+      <!-- end nav section -->
+
+    <!--start landing section  -->
+      <section class="landing d-flex justify-content-center align-items-center" id="landing">
+        <div class="container-fluid py-4">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-6 col-md-8 col-sm-12 ">
+                    <div class="info text-center">
+                        <h2>I'm A <span>Frontend</span> Developer</h2>
+                        <p class="lead">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Cumque reprehenderit exercitationem neque eius.
+                            In voluptatibus facilis hic dolorum possimus! Iste!
+                        </p>
+                        <a href="#submit" class="btn px-4 py-2 mt-4 landing-btn">Get Start</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    <!-- end landing section -->
+
+    <!-- start about section -->
+    <section class="about d-flex align-items-center" id="about">
+      <div class="container">
+        <h1 class="title">About</h1>
+        <div class="row d-flex align-items-center justify-content-center">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="about-info">
+              <h3>M.Abdelkareem</h3>
+              <p class="lead mt-4 w-75">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Perspiciatis sint natus dolorum consectetur iste minus optio ea unde
+                repellendus, laudantium, voluptatibus, quidem ad illum vitae neque
+                ab corrupti odit exercitationem.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 about-img text-center">
+            <img src="images/about-1.png" class="img-fluid" alt="">
+          </div>    
+        </div>
+      </div>
+    </section>
+    <!-- end about section -->
+    
+    <!-- start skills section -->
+    <section class="skills pt-4 d-flex align-items-center" id="skills">
+      <div class="container ">
+        <h1 class="title">Our Skills</h1>
+        <div class="row d-flex align-items-center justify-content-center">
+
+          <div class="col-lg-6 col-md-12-col-sm-12 d-flex justify-content-center align-items-center ">
+            <img src="images/skills-1.png" class="img-fluid skills-img" alt="">
+          </div>
+
+          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+            <div class="w-75 content2">
+            <div class="progress-box mt-2">
+              <div class="progress-info w-100 d-flex justify-content-between align-items-center ">
+                <h6 class="progress-name">HTML</h6>
+                <div class="progress-digit rounded-1">90%</div>
+              </div>
+              <div class="progress-item rounded-3 mt-2">
+                <div class=" bar-item" data-progress="90%" ></div>
+              </div>
+            </div>
+
+            <div class="progress-box mt-2">
+              <div class="progress-info w-100 d-flex justify-content-between align-items-center">
+                <h6 class="progress-name">CSS</h6>
+                <div class="progress-digit rounded-1">80%</div>
+              </div>
+              <div class="progress-item rounded-3 mt-2">
+                <div class=" bar-item"data-progress="80%" ></div>
+              </div>
+            </div>
+            <div class="progress-box mt-2">
+              <div class="progress-info w-100 d-flex justify-content-between align-items-center">
+                <h6 class="progress-name">Java Script</h6>
+                <div class="progress-digit rounded-1">70%</div>
+              </div>
+              <div class="progress-item rounded-3 mt-2">
+                <div class=" bar-item"data-progress="70%" ></div>
+              </div>
+            </div>
+            <div class="progress-box mt-2">
+              <div class="progress-info w-100 d-flex justify-content-between align-items-center">
+                <h6 class="progress-name">Bootstrap</h6>
+                <div class="progress-digit rounded-1">85%</div>
+              </div>
+              <div class="progress-item rounded-3 mt-2">
+                <div class=" bar-item" data-progress="85%"></div>
+              </div>
+            </div>
+            <div class="progress-box mt-2">
+              <div class="progress-info w-100 d-flex justify-content-between align-items-center">
+                <h6 class="progress-name">Git/Github</h6>
+                <div class="progress-digit rounded-1">70%</div>
+              </div>
+              <div class="progress-item rounded-3 mt-2">
+                <div class=" bar-item" data-progress="70%"></div>
+              </div>
+            </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end skills section -->
+    
+    <!-- start gallary section -->
+    <section class="gallary py-5" id="gallary">
+      <div class="container">
+        <h1 class="title">Gallary</h1>
+        <div class="row mt-5 g-4 ">
+          
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="gallary-content position-relative ">
+              <img src="images/g1.jpg" alt="" class="img-fluid ">
+              <h6 class="rounded-1">feature</h6>
+              <h5 class="rounded-1">for sale</h5>
+              <div class="gallary-info d-flex flex-column align-items-center">
+                <small class="my-3">Furnitures</small>
+                <div class="gallary-icons d-flex justify-content-around w-75">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>4</p>
+                  <i class="fa-brands fa-opencart"></i>
+                  <p>2</p>
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <p>10</p>
+                  <i class="fa-regular fa-square"></i>
+                  <p>1200 <small>m <sup>2</sup></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="gallary-content position-relative ">
+              <img src="images/g2.jpg" alt="" class="img-fluid ">
+              <h6 class="rounded-1">feature</h6>
+              <h5 class="rounded-1">for sale</h5>
+              <div class="gallary-info d-flex flex-column align-items-center">
+                <small class="my-3">Furnitures</small>
+                <div class="gallary-icons d-flex justify-content-around w-75">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>4</p>
+                  <i class="fa-brands fa-opencart"></i>
+                  <p>2</p>
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <p>10</p>
+                  <i class="fa-regular fa-square"></i>
+                  <p>1200 <small>m <sup>2</sup></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="gallary-content position-relative ">
+              <img src="images/g3.jpg" alt="" class="img-fluid ">
+              <h6 class="rounded-1">feature</h6>
+              <h5 class="rounded-1">for sale</h5>
+              <div class="gallary-info d-flex flex-column align-items-center">
+                <small class="my-3">Furnitures</small>
+                <div class="gallary-icons d-flex justify-content-around w-75">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>4</p>
+                  <i class="fa-brands fa-opencart"></i>
+                  <p>2</p>
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <p>10</p>
+                  <i class="fa-regular fa-square"></i>
+                  <p>1200 <small>m <sup>2</sup></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="gallary-content position-relative ">
+              <img src="images/g4.jpg" alt="" class="img-fluid ">
+              <h6 class="rounded-1">feature</h6>
+              <h5 class="rounded-1">for sale</h5>
+              <div class="gallary-info d-flex flex-column align-items-center">
+                <small class="my-3">Furnitures</small>
+                <div class="gallary-icons d-flex justify-content-around w-75">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>4</p>
+                  <i class="fa-brands fa-opencart"></i>
+                  <p>2</p>
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <p>10</p>
+                  <i class="fa-regular fa-square"></i>
+                  <p>1200 <small>m <sup>2</sup></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="gallary-content position-relative ">
+              <img src="images/g5.jpg" alt="" class="img-fluid ">
+              <h6 class="rounded-1">feature</h6>
+              <h5 class="rounded-1">for sale</h5>
+              <div class="gallary-info d-flex flex-column align-items-center">
+                <small class="my-3">Furnitures</small>
+                <div class="gallary-icons d-flex justify-content-around w-75">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>4</p>
+                  <i class="fa-brands fa-opencart"></i>
+                  <p>2</p>
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <p>10</p>
+                  <i class="fa-regular fa-square"></i>
+                  <p>1200 <small>m <sup>2</sup></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="gallary-content position-relative ">
+              <img src="images/g6.jpg" alt="" class="img-fluid ">
+              <h6 class="rounded-1">feature</h6>
+              <h5 class="rounded-1">for sale</h5>
+              <div class="gallary-info d-flex flex-column align-items-center">
+                <small class="my-3">Furnitures</small>
+                <div class="gallary-icons d-flex justify-content-around w-75">
+                  <i class="fa-regular fa-heart"></i>
+                  <p>4</p>
+                  <i class="fa-brands fa-opencart"></i>
+                  <p>2</p>
+                  <i class="fa-solid fa-cart-plus"></i>
+                  <p>10</p>
+                  <i class="fa-regular fa-square"></i>
+                  <p>1200 <small>m <sup>2</sup></small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="light-box d-none justify-content-center align-items-center">
+            <div class="light-box-content d-flex align-items-center justify-content-between position-relative">
+              <span class="left carousel-control-prev-icon"></span>
+              <span class="close btn-close"></span>
+              <span class="right carousel-control-next-icon"></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end gallary section -->
+
+    <!-- start timeLine section -->
+    <section class="timeLine py-5" id="timeLine">
+      <div class="container">
+        <h1 class="title">Time Line</h1>
+        <div class="timeline-content position-relative mt-5 pt-5">
+          <div class="year">2024</div>
+          <div class="left mb-4 ">
+            <div class="content py-2 px-3 shadow-sm rounded-2">
+              <h2>Time Line</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptas voluptate ex asperiores numquam deleniti
+                  consectetur molestiae quis officia deserunt ea.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="right mb-4 ">
+            <div class="content py-2 px-3 shadow-sm rounded-2">
+              <h2>Time Line</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptas voluptate ex asperiores numquam deleniti
+                  consectetur molestiae quis officia deserunt ea.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="year">2023</div>
+          <div class="left mb-4 ">
+            <div class="content py-2 px-3 shadow-sm rounded-2">
+              <h2>Time Line</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptas voluptate ex asperiores numquam deleniti
+                  consectetur molestiae quis officia deserunt ea.
+              </p>
+            </div>
+          </div>
+          <div class="clearfix"></div>
+          <div class="left mb-4 ">
+            <div class="content py-2 px-3 shadow-sm rounded-2">
+              <h2>Time Line</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptas voluptate ex asperiores numquam deleniti
+                  consectetur molestiae quis officia deserunt ea.
+              </p>
+            </div>
+          </div>
+
+          <div class="clearfix"></div>
+          <div class="year">2022</div>
+          <div class="right mb-4 ">
+            <div class="content py-2 px-3 shadow-sm rounded-2">
+              <h2>Time Line</h2>
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Voluptas voluptate ex asperiores numquam deleniti
+                  consectetur molestiae quis officia deserunt ea.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- end timeLine section -->
+
+    <!-- start video section -->
+    <section class="video position-relative" id="submit">
+      <video autoplay muted loop  class="w-100 ">
+        <source src="images/v2.mp4" type="video/mp4">
+      </video>
+      <div class="container form-card ">
+        <div class="row d-flex justify-content-start">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="form-card-content w-100 bg-white p-5">
+              <h4 class="mb-4">Get In Touch</h4>
+              <input type="text" oninput="nameValidation()" class="name form-control mb-3" placeholder="name">
+              <input type="email" oninput="emailValidation()" class="email form-control mb-3" placeholder="email">
+              <textarea class="form-control mb-3" placeholder="massege"></textarea>
+              <p class="fw-bold">GDPR Agreement</p>
+              <div class="form-check mb-4">
+                <input class="form-check-input" type="checkbox" value="" id="main-check">
+                <label class="form-check-label" for="main-check">
+                  I consent to having this website store my submitted information
+                </label>
+              </div>
+              <button type="submit " class="btn form-card-btn w-100">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end video section -->
+
+    <!-- start features section -->
+    <section class="feature py-5" id="feature">
+      <div class="container">
+        <h1 class="title mb-5">Feature</h1>
+        <div class="feature-content ">
+          <ul class="nav nav-pills mb-3 d-flex justify-content-center mb-5" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="pills-All-tab" data-bs-toggle="pill" data-bs-target="#pills-All" type="button" role="tab" aria-controls="pills-All" aria-selected="true">All</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-Reception-tab" data-bs-toggle="pill" data-bs-target="#pills-Reception" type="button" role="tab" aria-controls="pills-Reception" aria-selected="false">Reception</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="pills-Sofra-tab" data-bs-toggle="pill" data-bs-target="#pills-Sofra" type="button" role="tab" aria-controls="pills-Sofra" aria-selected="false">Sofra</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-All" role="tabpanel" aria-labelledby="pills-All-tab" tabindex="0">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f1.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f2.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f3.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f4.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f5.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f6.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f7.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f8.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f9.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-Reception" role="tabpanel" aria-labelledby="pills-Reception-tab" tabindex="0">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f1.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f2.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f3.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f9.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f5.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="pills-Sofra" role="tabpanel" aria-labelledby="pills-Sofra-tab" tabindex="0">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f4.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f6.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f7.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                  <div class="feature-info position-relative">
+                    <img src="images/f8.jpg" alt="" class="img-fluid">
+                    <div class="feature-text text-white">
+                      <h5 class="text-center">Furniture</h5>
+                      <p class="text-center lead">Lorem ipsum dolor sit.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end features section -->
+    
+    <!-- start testimonial section -->
+    <section class="testimonail py-5" id="testimonail">
+      <div class="container">
+        <h1 class="title"> Testimonial</h1>
+        <div class="row mt-5">
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="content p-4 d-flex justify-content-center align-items-center">
+              <h3 class="text-capitalize text-white w-50 display-6 fw-bold mt-5 position-relative">What our customers are saying
+                <span class="position-absolute display-6">,,"</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-12 col-sm-12">
+            <div class="carsoul-content shadow-sm">
+              <div id="carouselExampleIndicators" class="carousel slide" >
+                <div class="carousel-inner w-75 mx-auto text-center ">
+                  <div class="carousel-item active">
+                    <img src="images/t1.jpg" class="rounded-circle shadow-lg" alt="testimonail 1">
+                    <div class="feadback w-100 pt-5 pb-2 px-5 ">
+                      <h6 class="name mt-2 mb-2 fw-bold">Kate Ronaldo</h6>
+                      <span class="text-muted position-relative">senior frontend</span>
+                      <p class="lead mt-3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Autem est quis, ad deserunt minus nobis fuga officia
+                          deleniti. Porro, architecto.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/t2.jpg" class="rounded-circle shadow-lg" alt="testimonail 1">
+                    <div class="feadback w-100 pt-5 pb-2 px-5 ">
+                      <h6 class="name mt-2 mb-2 fw-bold">Malek Ali</h6>
+                      <span class="text-muted position-relative">senior flutter</span>
+                      <p class="lead mt-3">
+                        Laboriosam, minima. Nemo asperiores iste itaque tempora.
+                         Illum voluptas autem repellat molestias quis.
+                          Sit ad at labore ea quidem vitae ipsam sint.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/t3.jpg" class="rounded-circle shadow-lg" alt="testimonail 1">
+                    <div class="feadback w-100 pt-5 pb-2 px-5 ">
+                      <h6 class="name mt-2 mb-2 fw-bold">Fale Foden</h6>
+                      <span class="text-muted position-relative">Data Analyziz</span>
+                      <p class="lead mt-3">
+                        Lorem ipsum dolor sit amet consectetur,
+                         adipisicing elit. Necessitatibus a commodi vitae
+                          consequuntur rerum eum magni eos ipsum magnam illo inventore.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="images/t4.jpg" class="rounded-circle shadow-lg" alt="testimonail 1">
+                    <div class="feadback w-100 pt-5 pb-2 px-5 ">
+                      <h6 class="name mt-2 mb-2 fw-bold">Kate Ronaldo</h6>
+                      <span class="text-muted position-relative">senior frontend</span>
+                      <p class="lead mt-3">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                         Autem est quis, ad deserunt minus nobis fuga officia
+                          deleniti. Porro, architecto.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-indicators position-static mt-3">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1">
+                    <img src="images/t1.jpg" class="img-fluid rounded-circle" alt="">
+                  </button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2">
+                    <img src="images/t2.jpg" class="img-fluid rounded-circle" alt="">
+                  </button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3">
+                    <img src="images/t3.jpg" class="img-fluid rounded-circle" alt="">
+                  </button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4">
+                    <img src="images/t4.jpg" class="img-fluid rounded-circle" alt="">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end testimonial section -->
+    
+    <!-- start contact us section -->
+    <section class="contact py-5" id="contact">
+      <div class="container">
+        <h1 class="title text-white">Contact Us</h1>
+        <form action="" class="row mt-5">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="content1 d-flex flex-column align-items-center">
+              <input type="text" class="form-control w-75 bg-transparent" placeholder="Your Name" name="name">
+              <input type="text" class="form-control w-75 my-3 bg-transparent" placeholder="Your Phone" name="phone">
+              <input type="email" class="form-control w-75 bg-transparent" placeholder="Your Email" name="email">
+              <input type="text" class="form-control w-75 mt-3 bg-transparent" placeholder="Subject" name="subject">
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="content2 d-flex flex-column align-items-center">
+              <textarea class="form-control w-75 bg-transparent" placeholder="Your massege"  rows="3"></textarea>
+              <input type="submit" class="form-btn btn mt-4 w-75" value="Send">
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- end contact us section -->
+
+    <!-- start footer -->
+    <footer class="py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+            <div class="content1 w-75">
+              <h2 class="fw-bold">Get In Touch</h2>
+              <p class="">Created With Love By 
+                <span class="fw-bolder">Mohamed Abdelkareem</span>
+              </p>
+              <div class="social w-50 d-flex justify-content-between">
+                <a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit"><i class="icon fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/"><i class="icon fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/"><i class="icon fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/"><i class="icon fa-brands fa-facebook-f"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center ">
+            <div class="content2 w-75 ">
+              <p class="text-muted mb-2">Get in touch with us via mail phone. 
+                We are waiting for your call or message
+              </p>
+              <div class="input-group mb-3 ">
+                <input type="text" class="form-control bg-transparent" placeholder="Send Email" >
+                <button type="submit" class="btn">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <!-- main font awesome js file -->
+    <script src="js/all.min.js"></script>
+    <!-- main bootstrap js file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- main js project file -->
+    <script src="js/main.js"></script>
+</body>
+</html>
